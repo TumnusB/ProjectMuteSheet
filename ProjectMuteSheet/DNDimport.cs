@@ -150,8 +150,8 @@ namespace ProjectMuteSheet
                         switch (temparray.Count())
                         {
                         case 2:
-                                System.Windows.Forms.MessageBox.Show(temparray[0]);
-                                System.Windows.Forms.MessageBox.Show(temparray[1]);
+                                //System.Windows.Forms.MessageBox.Show(temparray[0]);
+                                //System.Windows.Forms.MessageBox.Show(temparray[1]);
                                 break;
 
                         case 4:

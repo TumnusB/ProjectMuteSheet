@@ -84,3 +84,14 @@ D:\ProjectMuteSheet\ProjectMuteSheet\obj\Debug\ProjectMuteSheet.csproj.CoreCompi
 D:\ProjectMuteSheet\ProjectMuteSheet\bin\Debug\ProjectMuteSheet.exe
 D:\ProjectMuteSheet\ProjectMuteSheet\bin\Debug\ProjectMuteSheet.pdb
 D:\ProjectMuteSheet\ProjectMuteSheet\obj\Debug\ProjectMuteSheet.FormPointBuy.resources
+I:\GitHub\ProjectMuteSheet\ProjectMuteSheet\bin\Debug\ProjectMuteSheet.exe.config
+I:\GitHub\ProjectMuteSheet\ProjectMuteSheet\bin\Debug\ProjectMuteSheet.exe
+I:\GitHub\ProjectMuteSheet\ProjectMuteSheet\bin\Debug\ProjectMuteSheet.pdb
+I:\GitHub\ProjectMuteSheet\ProjectMuteSheet\obj\Debug\ProjectMuteSheet.csprojResolveAssemblyReference.cache
+I:\GitHub\ProjectMuteSheet\ProjectMuteSheet\obj\Debug\ProjectMuteSheet.FormDnDSheet.resources
+I:\GitHub\ProjectMuteSheet\ProjectMuteSheet\obj\Debug\ProjectMuteSheet.FormPointBuy.resources
+I:\GitHub\ProjectMuteSheet\ProjectMuteSheet\obj\Debug\ProjectMuteSheet.Properties.Resources.resources
+I:\GitHub\ProjectMuteSheet\ProjectMuteSheet\obj\Debug\ProjectMuteSheet.csproj.GenerateResource.Cache
+I:\GitHub\ProjectMuteSheet\ProjectMuteSheet\obj\Debug\ProjectMuteSheet.csproj.CoreCompileInputs.cache
+I:\GitHub\ProjectMuteSheet\ProjectMuteSheet\obj\Debug\ProjectMuteSheet.exe
+I:\GitHub\ProjectMuteSheet\ProjectMuteSheet\obj\Debug\ProjectMuteSheet.pdb
