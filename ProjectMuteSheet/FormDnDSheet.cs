@@ -20,6 +20,12 @@ namespace ProjectMuteSheet
 
         }
 
+        int str = 0;
+        int dex = 0;
+        int con = 0;
+        int inte = 0;
+        int wis = 0;
+        int cha = 0;
 
         /// <summary>
         /// Creates a public instance of DNDimport named Import
@@ -126,87 +132,179 @@ namespace ProjectMuteSheet
         private void ComboxRace_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtBoxRaceAbility.Text = DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Ability;
-            
+
+            AbilityScores();
+        }
+
+        private void AbilityScores()
+        {
+            numStr.Value = 0;
+            numDex.Value = 0;
+            numCon.Value = 0;
+            numInt.Value = 0;
+            numWis.Value = 0;
+            numCha.Value = 0;
 
             for (int i = 0; i < DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.Count(); i++)
             {
+
+                if (DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i).Contains("Str"))
+                {
+
+                    str += int.Parse(DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i + 1).ToString());
+                }
+
                 if (DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i).Contains("Dex"))
                 {
-                    txtbCha.Text = DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i + 1).ToString();
+
+                    dex += int.Parse(DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i + 1).ToString());
+                }
+
+                if (DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i).Contains("Con"))
+                {
+                   con += int.Parse(DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i + 1).ToString());
+                }
+
+                if (DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i).Contains("Int"))
+                {
+                   inte += int.Parse(DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i + 1).ToString());
                 }
 
                 if (DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i).Contains("Wis"))
                 {
-                    txtbWis.Text = DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i + 1).ToString();
+                  wis += int.Parse(DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i + 1).ToString());
+                }
+
+                if (DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i).Contains("Cha"))
+                {
+                  cha += int.Parse(DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i + 1).ToString());
                 }
 
             }
         }
 
+
+
         /// <summary>
         /// The Label StrB
         /// will be changed to a value
-        /// based on the text input from 
-        /// txtbStr for more info <see cref="DNDsheet.CalcAbilityScoreModifier(string)"/>
+        /// based on the numeric input from 
+        /// numStr for more info <see cref="DNDsheet.CalcAbilityScoreModifier(string)"/>
         /// </summary>
-        private void txtbStr_TextChanged(object sender, EventArgs e)
+        private void numStr_ValueChanged(object sender, EventArgs e)
         {
-            lbStrB.Text = newdnds.CalcAbilityScoreModifier(txtbStr.Text);
+            int newstr = str;
+
+            newstr += Convert.ToInt32(numStr.Value);
+
+            Console.WriteLine("Str Value: " + str);
+            Console.WriteLine("Working Str Value: " + newstr);
+
+            string temp = newstr.ToString();
+
+            lbStrB.Text = newdnds.CalcAbilityScoreModifier(temp);
         }
 
         /// <summary>
         /// The Label DexB
         /// will be changed to a value
-        /// based on the text input from 
-        /// txtbDex for more info <see cref="DNDsheet.CalcAbilityScoreModifier(string)"/>
+        /// based on the numeric input from 
+        /// numDex for more info <see cref="DNDsheet.CalcAbilityScoreModifier(string)"/>
         /// </summary>
-        private void txtbDex_TextChanged(object sender, EventArgs e)
+        private void numDex_ValueChanged(object sender, EventArgs e)
         {
-            lbDexB.Text = newdnds.CalcAbilityScoreModifier(txtbDex.Text);
+            int newdex = dex;
+
+            newdex += Convert.ToInt32(numDex.Value);
+
+            Console.WriteLine("Dex Value: " + dex);
+            Console.WriteLine("Working Dex Value: " + newdex);
+
+            string temp = newdex.ToString();
+
+            lbDexB.Text = newdnds.CalcAbilityScoreModifier(temp);
         }
 
         /// <summary>
         /// The Label ConB
         /// will be changed to a value
-        /// based on the text input from 
-        /// txtbCon for more info <see cref="DNDsheet.CalcAbilityScoreModifier(string)"/>
+        /// based on the numeric input from 
+        /// numCon for more info <see cref="DNDsheet.CalcAbilityScoreModifier(string)"/>
         /// </summary>
-        private void txtbCon_TextChanged(object sender, EventArgs e)
+        private void numCon_ValueChanged(object sender, EventArgs e)
         {
-            lbConB.Text = newdnds.CalcAbilityScoreModifier(txtbCon.Text);
+            int newcon = con;
+
+            newcon += Convert.ToInt32(numCon.Value);
+
+            Console.WriteLine("Con Value: " + con);
+            Console.WriteLine("Working Con Value: " + newcon);
+
+            string temp = newcon.ToString();
+
+            lbConB.Text = newdnds.CalcAbilityScoreModifier(temp);
         }
 
         /// <summary>
         /// The Label IntB
         /// will be changed to a value
-        /// based on the text input from 
-        /// txtbInt for more info <see cref="DNDsheet.CalcAbilityScoreModifier(string)"/>
+        /// based on the numeric input from 
+        /// numInt for more info <see cref="DNDsheet.CalcAbilityScoreModifier(string)"/>
         /// </summary>
-        private void txtbInt_TextChanged(object sender, EventArgs e)
+        private void numInt_ValueChanged(object sender, EventArgs e)
         {
-            lbIntB.Text = newdnds.CalcAbilityScoreModifier(txtbInt.Text);
+            int newint = inte;
+
+            newint += Convert.ToInt32(numInt.Value);
+
+            Console.WriteLine("Int Value: " + inte);
+            Console.WriteLine("Working Int Value: " + newint);
+
+            string temp = newint.ToString();
+
+            lbIntB.Text = newdnds.CalcAbilityScoreModifier(temp);
         }
 
         /// <summary>
         /// The Label WisB
         /// will be changed to a value
-        /// based on the text input from 
-        /// WisbStr for more info <see cref="DNDsheet.CalcAbilityScoreModifier(string)"/>
+        /// based on the numeric input from 
+        /// numStr for more info <see cref="DNDsheet.CalcAbilityScoreModifier(string)"/>
         /// </summary>
-        private void txtbWis_TextChanged(object sender, EventArgs e)
+        private void numWis_ValueChanged(object sender, EventArgs e)
         {
-            lbWisB.Text = newdnds.CalcAbilityScoreModifier(txtbWis.Text);
+            int newwis = wis;
+
+            newwis += Convert.ToInt32(numWis.Value);
+
+            Console.WriteLine("Wis Value: " + wis);
+            Console.WriteLine("Working Wis Value: " + newwis);
+
+            string temp = newwis.ToString();
+
+            lbWisB.Text = newdnds.CalcAbilityScoreModifier(temp);
         }
+
         /// <summary>
         /// The Label ChaB
         /// will be changed to a value
-        /// based on the text input from 
-        /// txtbCha for more info <see cref="DNDsheet.CalcAbilityScoreModifier(string)"/>
+        /// based on the numeric input from  
+        /// numCha for more info <see cref="DNDsheet.CalcAbilityScoreModifier(string)"/>
         /// </summary>
-        private void txtbCha_TextChanged(object sender, EventArgs e)
+        private void numCha_ValueChanged(object sender, EventArgs e)
         {
-            lbChaB.Text = newdnds.CalcAbilityScoreModifier(txtbCha.Text);
+            int newcha = cha;
+
+            newcha += Convert.ToInt32(numCha.Value);
+
+            Console.WriteLine("Cha Value: " + cha);
+            Console.WriteLine("Working Cha Value: " + newcha);
+
+            string temp = newcha.ToString();
+
+            lbChaB.Text = newdnds.CalcAbilityScoreModifier(temp);
         }
+
 
         private void checkPointBuy_CheckedChanged(object sender, EventArgs e)
         {

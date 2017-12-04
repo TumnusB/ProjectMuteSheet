@@ -31,12 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDnDSheet));
             this.ComBoxClass = new System.Windows.Forms.ComboBox();
             this.txtBoxProf = new System.Windows.Forms.TextBox();
-            this.txtbStr = new System.Windows.Forms.TextBox();
-            this.txtbDex = new System.Windows.Forms.TextBox();
-            this.txtbCha = new System.Windows.Forms.TextBox();
-            this.txtbCon = new System.Windows.Forms.TextBox();
-            this.txtbInt = new System.Windows.Forms.TextBox();
-            this.txtbWis = new System.Windows.Forms.TextBox();
             this.lbStr = new System.Windows.Forms.Label();
             this.lbDex = new System.Windows.Forms.Label();
             this.lbCon = new System.Windows.Forms.Label();
@@ -64,6 +58,18 @@
             this.ComboxRace = new System.Windows.Forms.ComboBox();
             this.lbRaceAbility = new System.Windows.Forms.Label();
             this.txtBoxRaceAbility = new System.Windows.Forms.TextBox();
+            this.numStr = new System.Windows.Forms.NumericUpDown();
+            this.numDex = new System.Windows.Forms.NumericUpDown();
+            this.numCon = new System.Windows.Forms.NumericUpDown();
+            this.numInt = new System.Windows.Forms.NumericUpDown();
+            this.numWis = new System.Windows.Forms.NumericUpDown();
+            this.numCha = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numStr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDex)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numInt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numWis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCha)).BeginInit();
             this.SuspendLayout();
             // 
             // ComBoxClass
@@ -81,54 +87,6 @@
             this.txtBoxProf.Name = "txtBoxProf";
             this.txtBoxProf.Size = new System.Drawing.Size(193, 20);
             this.txtBoxProf.TabIndex = 3;
-            // 
-            // txtbStr
-            // 
-            this.txtbStr.Location = new System.Drawing.Point(6, 259);
-            this.txtbStr.Name = "txtbStr";
-            this.txtbStr.Size = new System.Drawing.Size(41, 20);
-            this.txtbStr.TabIndex = 8;
-            this.txtbStr.TextChanged += new System.EventHandler(this.txtbStr_TextChanged);
-            // 
-            // txtbDex
-            // 
-            this.txtbDex.Location = new System.Drawing.Point(6, 298);
-            this.txtbDex.Name = "txtbDex";
-            this.txtbDex.Size = new System.Drawing.Size(41, 20);
-            this.txtbDex.TabIndex = 9;
-            this.txtbDex.TextChanged += new System.EventHandler(this.txtbDex_TextChanged);
-            // 
-            // txtbCha
-            // 
-            this.txtbCha.Location = new System.Drawing.Point(6, 458);
-            this.txtbCha.Name = "txtbCha";
-            this.txtbCha.Size = new System.Drawing.Size(41, 20);
-            this.txtbCha.TabIndex = 13;
-            this.txtbCha.TextChanged += new System.EventHandler(this.txtbCha_TextChanged);
-            // 
-            // txtbCon
-            // 
-            this.txtbCon.Location = new System.Drawing.Point(6, 337);
-            this.txtbCon.Name = "txtbCon";
-            this.txtbCon.Size = new System.Drawing.Size(41, 20);
-            this.txtbCon.TabIndex = 10;
-            this.txtbCon.TextChanged += new System.EventHandler(this.txtbCon_TextChanged);
-            // 
-            // txtbInt
-            // 
-            this.txtbInt.Location = new System.Drawing.Point(6, 376);
-            this.txtbInt.Name = "txtbInt";
-            this.txtbInt.Size = new System.Drawing.Size(41, 20);
-            this.txtbInt.TabIndex = 11;
-            this.txtbInt.TextChanged += new System.EventHandler(this.txtbInt_TextChanged);
-            // 
-            // txtbWis
-            // 
-            this.txtbWis.Location = new System.Drawing.Point(6, 419);
-            this.txtbWis.Name = "txtbWis";
-            this.txtbWis.Size = new System.Drawing.Size(41, 20);
-            this.txtbWis.TabIndex = 12;
-            this.txtbWis.TextChanged += new System.EventHandler(this.txtbWis_TextChanged);
             // 
             // lbStr
             // 
@@ -371,11 +329,65 @@
             this.txtBoxRaceAbility.Size = new System.Drawing.Size(193, 20);
             this.txtBoxRaceAbility.TabIndex = 1;
             // 
+            // numStr
+            // 
+            this.numStr.Location = new System.Drawing.Point(4, 259);
+            this.numStr.Name = "numStr";
+            this.numStr.Size = new System.Drawing.Size(38, 20);
+            this.numStr.TabIndex = 36;
+            this.numStr.ValueChanged += new System.EventHandler(this.numStr_ValueChanged);
+            // 
+            // numDex
+            // 
+            this.numDex.Location = new System.Drawing.Point(4, 298);
+            this.numDex.Name = "numDex";
+            this.numDex.Size = new System.Drawing.Size(38, 20);
+            this.numDex.TabIndex = 37;
+            this.numDex.ValueChanged += new System.EventHandler(this.numDex_ValueChanged);
+            // 
+            // numCon
+            // 
+            this.numCon.Location = new System.Drawing.Point(4, 337);
+            this.numCon.Name = "numCon";
+            this.numCon.Size = new System.Drawing.Size(38, 20);
+            this.numCon.TabIndex = 38;
+            this.numCon.ValueChanged += new System.EventHandler(this.numCon_ValueChanged);
+            // 
+            // numInt
+            // 
+            this.numInt.Location = new System.Drawing.Point(4, 376);
+            this.numInt.Name = "numInt";
+            this.numInt.Size = new System.Drawing.Size(38, 20);
+            this.numInt.TabIndex = 39;
+            this.numInt.ValueChanged += new System.EventHandler(this.numInt_ValueChanged);
+            // 
+            // numWis
+            // 
+            this.numWis.Location = new System.Drawing.Point(4, 415);
+            this.numWis.Name = "numWis";
+            this.numWis.Size = new System.Drawing.Size(38, 20);
+            this.numWis.TabIndex = 40;
+            this.numWis.ValueChanged += new System.EventHandler(this.numWis_ValueChanged);
+            // 
+            // numCha
+            // 
+            this.numCha.Location = new System.Drawing.Point(4, 458);
+            this.numCha.Name = "numCha";
+            this.numCha.Size = new System.Drawing.Size(38, 20);
+            this.numCha.TabIndex = 41;
+            this.numCha.ValueChanged += new System.EventHandler(this.numCha_ValueChanged);
+            // 
             // FormDnDSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 501);
+            this.Controls.Add(this.numCha);
+            this.Controls.Add(this.numWis);
+            this.Controls.Add(this.numInt);
+            this.Controls.Add(this.numCon);
+            this.Controls.Add(this.numDex);
+            this.Controls.Add(this.numStr);
             this.Controls.Add(this.txtBoxRaceAbility);
             this.Controls.Add(this.lbRaceAbility);
             this.Controls.Add(this.ComboxRace);
@@ -403,18 +415,18 @@
             this.Controls.Add(this.lbCon);
             this.Controls.Add(this.lbDex);
             this.Controls.Add(this.lbStr);
-            this.Controls.Add(this.txtbWis);
-            this.Controls.Add(this.txtbInt);
-            this.Controls.Add(this.txtbCon);
-            this.Controls.Add(this.txtbCha);
-            this.Controls.Add(this.txtbDex);
-            this.Controls.Add(this.txtbStr);
             this.Controls.Add(this.txtBoxProf);
             this.Controls.Add(this.ComBoxClass);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormDnDSheet";
             this.Text = "Interactive D&D Sheet";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numStr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDex)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numInt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numWis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCha)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,12 +436,6 @@
 
         private System.Windows.Forms.ComboBox ComBoxClass;
         private System.Windows.Forms.TextBox txtBoxProf;
-        private System.Windows.Forms.TextBox txtbStr;
-        private System.Windows.Forms.TextBox txtbDex;
-        private System.Windows.Forms.TextBox txtbCha;
-        private System.Windows.Forms.TextBox txtbCon;
-        private System.Windows.Forms.TextBox txtbInt;
-        private System.Windows.Forms.TextBox txtbWis;
         private System.Windows.Forms.Label lbStr;
         private System.Windows.Forms.Label lbDex;
         private System.Windows.Forms.Label lbCon;
@@ -457,6 +463,12 @@
         private System.Windows.Forms.ComboBox ComboxRace;
         private System.Windows.Forms.Label lbRaceAbility;
         private System.Windows.Forms.TextBox txtBoxRaceAbility;
+        private System.Windows.Forms.NumericUpDown numStr;
+        private System.Windows.Forms.NumericUpDown numDex;
+        private System.Windows.Forms.NumericUpDown numCon;
+        private System.Windows.Forms.NumericUpDown numInt;
+        private System.Windows.Forms.NumericUpDown numWis;
+        private System.Windows.Forms.NumericUpDown numCha;
     }
 }
 
