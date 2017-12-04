@@ -126,6 +126,21 @@ namespace ProjectMuteSheet
         private void ComboxRace_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtBoxRaceAbility.Text = DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Ability;
+            
+
+            for (int i = 0; i < DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.Count(); i++)
+            {
+                if (DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i).Contains("Dex"))
+                {
+                    txtbCha.Text = DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i + 1).ToString();
+                }
+
+                if (DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i).Contains("Wis"))
+                {
+                    txtbWis.Text = DNDdata.RaceList.ElementAt(ComboxRace.SelectedIndex).Abilities.ElementAt(i + 1).ToString();
+                }
+
+            }
         }
 
         /// <summary>
@@ -206,8 +221,6 @@ namespace ProjectMuteSheet
             }
             
         }
-
-        
     }
 }
 
