@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,20 +27,38 @@ namespace ProjectMuteSheet
         /// </returns>
         public DNDdata XMLimport()
         {
-            ///Opens a File Dialog askign user to open a certain file
-            System.Windows.Forms.OpenFileDialog openXML = new System.Windows.Forms.OpenFileDialog
-            {
-                Filter = "XML Files|*.xml",
-                Title = "Navigate to Character Compendium Edited.xml"
+            ///Creates a string that points to the user Appdata Folder
+            string fileName = Path.Combine(Environment.GetFolderPath(
+            Environment.SpecialFolder.ApplicationData), "Character Compendium Edited.xml");
 
-            };
-
-            ///If the user selects a file and hits open it run this code
-            if (openXML.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            ///checks if Character Compendium Edited.xml exist in Appdata
+            if (!System.IO.File.Exists(fileName))
             {
-                ///This will use create a instance of XDocument Named Doc 
+
+                ///Opens a File Dialog asking the user to open a certain file
+                System.Windows.Forms.OpenFileDialog openXML = new System.Windows.Forms.OpenFileDialog
+                {
+                    Filter = "XML Files|*.xml",
+                    Title = "Navigate to Character Compendium Edited.xml"
+
+                };
+
+                ///If the user selects a file and hits open it run this code
+                if (openXML.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    ///This will copy the XML file to the Appdata folder
+                    File.Copy(openXML.FileName.ToString(), fileName);
+                }
+
+            } 
+            
+            ///checks if the AppData Folder has the XML File 
+            if (System.IO.File.Exists(fileName))
+                {
+                ///This will create a instance of XDocument Named Doc 
                 ///Then get the files path and pass it to the load function of XDcoument 
-                XDocument doc = XDocument.Load(openXML.FileName.ToString());
+                //XDocument doc = XDocument.Load(openXML.FileName.ToString());
+                XDocument doc = XDocument.Load(fileName);
 
                 ///XElement gets a single element 
                 ///we then set this element to Documents Root
@@ -51,8 +70,8 @@ namespace ProjectMuteSheet
                 ///We create a list of XElements called proficiency to do this we search for elements called class then proficiency
                 ///this is searched and then automaticlly made into a list without needing to loop trough each one indvidually
                 ///this is then done for each pair we require
-       
-                List<XElement> proficiency = compendium.Elements("class").Select(x => x.Element("proficiency")).ToList();       
+
+                List<XElement> proficiency = compendium.Elements("class").Select(x => x.Element("proficiency")).ToList();
                 List<XElement> name = compendium.Elements("class").Select(x => x.Element("name")).ToList();
 
                 ///DND BACKGROUND IMPORT
@@ -76,9 +95,9 @@ namespace ProjectMuteSheet
                     ///we can just use the count of one of them for the loop
                     for (int i = 0; i < bgprof.Count; i++)
                     {
-                       ///Here for each loop we make 
-                       ///newbackground have the values inside the 
-                       ///brackets
+                        ///Here for each loop we make 
+                        ///newbackground have the values inside the 
+                        ///brackets
                         newbackground = new DNDbackground
                         {
                             ///ElementAt(i).Value will get the current
@@ -147,31 +166,7 @@ namespace ProjectMuteSheet
 
                         string[] temparray = newtemp.Split(null);
 
-                        switch (temparray.Count())
-                        {
-                        case 2:
-                                //System.Windows.Forms.MessageBox.Show(temparray[0]);
-                                //System.Windows.Forms.MessageBox.Show(temparray[1]);
-                                break;
-
-                        case 4:
-
-                        break;
-
-                        case 6:
-
-                        break;
-
-                        case 12:
-
-                        break;
-
-                        default:
-
-                        break;
-                        }
-
-                        //newrace.Proficiencies.AddRange(temparray);
+                        newrace.Abilities.AddRange(temparray);
 
                         data.Addrace(newrace);
                     }

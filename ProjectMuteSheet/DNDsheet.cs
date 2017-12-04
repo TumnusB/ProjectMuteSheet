@@ -13,6 +13,9 @@ namespace ProjectMuteSheet
     /// </summary>
     public class DNDsheet
     {
+     
+        
+
         /// <summary>
         /// Calculates the ability score modifier.
         /// </summary>
@@ -29,6 +32,8 @@ namespace ProjectMuteSheet
             {
                 return "N/A";
             }
+
+            
 
             try
             {
