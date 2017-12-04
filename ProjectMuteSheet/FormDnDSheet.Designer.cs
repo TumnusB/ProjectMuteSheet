@@ -72,7 +72,7 @@
             this.ComBoxClass.Location = new System.Drawing.Point(10, 87);
             this.ComBoxClass.Name = "ComBoxClass";
             this.ComBoxClass.Size = new System.Drawing.Size(173, 21);
-            this.ComBoxClass.TabIndex = 1;
+            this.ComBoxClass.TabIndex = 2;
             this.ComBoxClass.SelectedIndexChanged += new System.EventHandler(this.ComBoxClass_SelectedIndexChanged);
             // 
             // txtBoxProf
@@ -80,14 +80,14 @@
             this.txtBoxProf.Location = new System.Drawing.Point(189, 87);
             this.txtBoxProf.Name = "txtBoxProf";
             this.txtBoxProf.Size = new System.Drawing.Size(193, 20);
-            this.txtBoxProf.TabIndex = 2;
+            this.txtBoxProf.TabIndex = 3;
             // 
             // txtbStr
             // 
             this.txtbStr.Location = new System.Drawing.Point(6, 259);
             this.txtbStr.Name = "txtbStr";
             this.txtbStr.Size = new System.Drawing.Size(41, 20);
-            this.txtbStr.TabIndex = 3;
+            this.txtbStr.TabIndex = 8;
             this.txtbStr.TextChanged += new System.EventHandler(this.txtbStr_TextChanged);
             // 
             // txtbDex
@@ -95,7 +95,7 @@
             this.txtbDex.Location = new System.Drawing.Point(6, 298);
             this.txtbDex.Name = "txtbDex";
             this.txtbDex.Size = new System.Drawing.Size(41, 20);
-            this.txtbDex.TabIndex = 4;
+            this.txtbDex.TabIndex = 9;
             this.txtbDex.TextChanged += new System.EventHandler(this.txtbDex_TextChanged);
             // 
             // txtbCha
@@ -103,7 +103,7 @@
             this.txtbCha.Location = new System.Drawing.Point(6, 458);
             this.txtbCha.Name = "txtbCha";
             this.txtbCha.Size = new System.Drawing.Size(41, 20);
-            this.txtbCha.TabIndex = 5;
+            this.txtbCha.TabIndex = 13;
             this.txtbCha.TextChanged += new System.EventHandler(this.txtbCha_TextChanged);
             // 
             // txtbCon
@@ -111,7 +111,7 @@
             this.txtbCon.Location = new System.Drawing.Point(6, 337);
             this.txtbCon.Name = "txtbCon";
             this.txtbCon.Size = new System.Drawing.Size(41, 20);
-            this.txtbCon.TabIndex = 6;
+            this.txtbCon.TabIndex = 10;
             this.txtbCon.TextChanged += new System.EventHandler(this.txtbCon_TextChanged);
             // 
             // txtbInt
@@ -119,7 +119,7 @@
             this.txtbInt.Location = new System.Drawing.Point(6, 376);
             this.txtbInt.Name = "txtbInt";
             this.txtbInt.Size = new System.Drawing.Size(41, 20);
-            this.txtbInt.TabIndex = 7;
+            this.txtbInt.TabIndex = 11;
             this.txtbInt.TextChanged += new System.EventHandler(this.txtbInt_TextChanged);
             // 
             // txtbWis
@@ -127,7 +127,7 @@
             this.txtbWis.Location = new System.Drawing.Point(6, 419);
             this.txtbWis.Name = "txtbWis";
             this.txtbWis.Size = new System.Drawing.Size(41, 20);
-            this.txtbWis.TabIndex = 8;
+            this.txtbWis.TabIndex = 12;
             this.txtbWis.TextChanged += new System.EventHandler(this.txtbWis_TextChanged);
             // 
             // lbStr
@@ -271,7 +271,7 @@
             this.comboxLevel.Location = new System.Drawing.Point(387, 87);
             this.comboxLevel.Name = "comboxLevel";
             this.comboxLevel.Size = new System.Drawing.Size(121, 21);
-            this.comboxLevel.TabIndex = 25;
+            this.comboxLevel.TabIndex = 4;
             this.comboxLevel.SelectedIndexChanged += new System.EventHandler(this.ComboxLevel_SelectedIndexChanged);
             // 
             // lbProf
@@ -315,7 +315,7 @@
             this.txtBoxbgProf.Location = new System.Drawing.Point(189, 152);
             this.txtBoxbgProf.Name = "txtBoxbgProf";
             this.txtBoxbgProf.Size = new System.Drawing.Size(193, 20);
-            this.txtBoxbgProf.TabIndex = 29;
+            this.txtBoxbgProf.TabIndex = 6;
             // 
             // ComboxBackground
             // 
@@ -323,7 +323,7 @@
             this.ComboxBackground.Location = new System.Drawing.Point(10, 152);
             this.ComboxBackground.Name = "ComboxBackground";
             this.ComboxBackground.Size = new System.Drawing.Size(173, 21);
-            this.ComboxBackground.TabIndex = 28;
+            this.ComboxBackground.TabIndex = 5;
             this.ComboxBackground.SelectedIndexChanged += new System.EventHandler(this.ComboxBackground_SelectedIndexChanged);
             // 
             // checkPointBuy
@@ -332,7 +332,7 @@
             this.checkPointBuy.Location = new System.Drawing.Point(15, 210);
             this.checkPointBuy.Name = "checkPointBuy";
             this.checkPointBuy.Size = new System.Drawing.Size(77, 17);
-            this.checkPointBuy.TabIndex = 32;
+            this.checkPointBuy.TabIndex = 7;
             this.checkPointBuy.Text = "Point Buy?";
             this.checkPointBuy.UseVisualStyleBackColor = true;
             this.checkPointBuy.CheckedChanged += new System.EventHandler(this.checkPointBuy_CheckedChanged);
@@ -352,7 +352,7 @@
             this.ComboxRace.Location = new System.Drawing.Point(10, 25);
             this.ComboxRace.Name = "ComboxRace";
             this.ComboxRace.Size = new System.Drawing.Size(173, 21);
-            this.ComboxRace.TabIndex = 34;
+            this.ComboxRace.TabIndex = 0;
             this.ComboxRace.SelectedIndexChanged += new System.EventHandler(this.ComboxRace_SelectedIndexChanged);
             // 
             // lbRaceAbility
@@ -369,7 +369,7 @@
             this.txtBoxRaceAbility.Location = new System.Drawing.Point(189, 25);
             this.txtBoxRaceAbility.Name = "txtBoxRaceAbility";
             this.txtBoxRaceAbility.Size = new System.Drawing.Size(193, 20);
-            this.txtBoxRaceAbility.TabIndex = 36;
+            this.txtBoxRaceAbility.TabIndex = 1;
             // 
             // FormDnDSheet
             // 
