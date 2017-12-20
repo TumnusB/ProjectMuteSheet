@@ -64,6 +64,7 @@
             this.numInt = new System.Windows.Forms.NumericUpDown();
             this.numWis = new System.Windows.Forms.NumericUpDown();
             this.numCha = new System.Windows.Forms.NumericUpDown();
+            this.btnPoints = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numStr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCon)).BeginInit();
@@ -377,11 +378,23 @@
             this.numCha.TabIndex = 41;
             this.numCha.ValueChanged += new System.EventHandler(this.numCha_ValueChanged);
             // 
+            // btnPoints
+            // 
+            this.btnPoints.Location = new System.Drawing.Point(98, 210);
+            this.btnPoints.Name = "btnPoints";
+            this.btnPoints.Size = new System.Drawing.Size(75, 23);
+            this.btnPoints.TabIndex = 42;
+            this.btnPoints.Text = "Points Calc";
+            this.btnPoints.UseVisualStyleBackColor = true;
+            this.btnPoints.Visible = false;
+            this.btnPoints.Click += new System.EventHandler(this.btnPoints_Click);
+            // 
             // FormDnDSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 501);
+            this.Controls.Add(this.btnPoints);
             this.Controls.Add(this.numCha);
             this.Controls.Add(this.numWis);
             this.Controls.Add(this.numInt);
@@ -469,6 +482,7 @@
         private System.Windows.Forms.NumericUpDown numInt;
         private System.Windows.Forms.NumericUpDown numWis;
         private System.Windows.Forms.NumericUpDown numCha;
+        private System.Windows.Forms.Button btnPoints;
     }
 }
 

@@ -310,14 +310,26 @@ namespace ProjectMuteSheet
         {
             if (checkPointBuy.Checked)
             {
-                FormPointBuy formPointBuy = new FormPointBuy();
-                formPointBuy.ShowDialog();
+                btnPoints.Visible = true;
             }
             else if (!checkPointBuy.Checked)
             {
-
+                checkPointBuy.Checked = false;
             }
             
+        }
+
+        private void btnPoints_Click(object sender, EventArgs e)
+        {
+            FormPointBuy formPointBuy = new FormPointBuy();
+            formPointBuy.ShowDialog();
+
+            numStr.ReadOnly = true;
+            numDex.ReadOnly = true;
+            numCon.ReadOnly = true;
+            numInt.ReadOnly = true;
+            numWis.ReadOnly = true;
+            numCha.ReadOnly = true;
         }
     }
 }
