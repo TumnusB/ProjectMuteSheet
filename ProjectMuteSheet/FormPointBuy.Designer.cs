@@ -28,45 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.numUDStr = new System.Windows.Forms.NumericUpDown();
             this.lbStr = new System.Windows.Forms.Label();
             this.lbDex = new System.Windows.Forms.Label();
-            this.numUDDex = new System.Windows.Forms.NumericUpDown();
             this.lbCon = new System.Windows.Forms.Label();
-            this.numUDCon = new System.Windows.Forms.NumericUpDown();
             this.lbInt = new System.Windows.Forms.Label();
-            this.numUDInt = new System.Windows.Forms.NumericUpDown();
             this.lbWis = new System.Windows.Forms.Label();
-            this.numUDWis = new System.Windows.Forms.NumericUpDown();
             this.lbCha = new System.Windows.Forms.Label();
-            this.numUDCha = new System.Windows.Forms.NumericUpDown();
             this.lbPoints = new System.Windows.Forms.Label();
             this.txtBoxPoints = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDStr)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDDex)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDCon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDInt)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDWis)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDCha)).BeginInit();
+            this.btnStrIn = new System.Windows.Forms.Button();
+            this.btnStrDe = new System.Windows.Forms.Button();
+            this.txtStr = new System.Windows.Forms.TextBox();
+            this.txtDex = new System.Windows.Forms.TextBox();
+            this.btnDexDe = new System.Windows.Forms.Button();
+            this.btnDexIn = new System.Windows.Forms.Button();
+            this.txtCon = new System.Windows.Forms.TextBox();
+            this.btnConDe = new System.Windows.Forms.Button();
+            this.btnConIn = new System.Windows.Forms.Button();
+            this.txtInt = new System.Windows.Forms.TextBox();
+            this.btnIntDe = new System.Windows.Forms.Button();
+            this.btnIntIn = new System.Windows.Forms.Button();
+            this.txtCha = new System.Windows.Forms.TextBox();
+            this.btnChaDe = new System.Windows.Forms.Button();
+            this.btnChaIn = new System.Windows.Forms.Button();
+            this.txtWis = new System.Windows.Forms.TextBox();
+            this.btnWisDe = new System.Windows.Forms.Button();
+            this.btnWisIn = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // numUDStr
-            // 
-            this.numUDStr.Location = new System.Drawing.Point(12, 50);
-            this.numUDStr.Name = "numUDStr";
-            this.numUDStr.Size = new System.Drawing.Size(44, 20);
-            this.numUDStr.TabIndex = 4;
-            this.numUDStr.Value = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
-            this.numUDStr.ValueChanged += new System.EventHandler(this.numUDStr_ValueChanged);
             // 
             // lbStr
             // 
             this.lbStr.AutoSize = true;
-            this.lbStr.Location = new System.Drawing.Point(9, 22);
+            this.lbStr.Location = new System.Drawing.Point(12, 9);
             this.lbStr.Name = "lbStr";
             this.lbStr.Size = new System.Drawing.Size(47, 13);
             this.lbStr.TabIndex = 5;
@@ -75,113 +68,52 @@
             // lbDex
             // 
             this.lbDex.AutoSize = true;
-            this.lbDex.Location = new System.Drawing.Point(62, 22);
+            this.lbDex.Location = new System.Drawing.Point(65, 9);
             this.lbDex.Name = "lbDex";
             this.lbDex.Size = new System.Drawing.Size(48, 13);
             this.lbDex.TabIndex = 7;
             this.lbDex.Text = "Dexterity";
             // 
-            // numUDDex
-            // 
-            this.numUDDex.Location = new System.Drawing.Point(65, 50);
-            this.numUDDex.Name = "numUDDex";
-            this.numUDDex.Size = new System.Drawing.Size(44, 20);
-            this.numUDDex.TabIndex = 6;
-            this.numUDDex.Value = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
-            this.numUDDex.ValueChanged += new System.EventHandler(this.numUDDex_ValueChanged);
-            // 
             // lbCon
             // 
             this.lbCon.AutoSize = true;
-            this.lbCon.Location = new System.Drawing.Point(115, 22);
+            this.lbCon.Location = new System.Drawing.Point(119, 9);
             this.lbCon.Name = "lbCon";
             this.lbCon.Size = new System.Drawing.Size(62, 13);
             this.lbCon.TabIndex = 9;
             this.lbCon.Text = "Constitution";
             // 
-            // numUDCon
-            // 
-            this.numUDCon.Location = new System.Drawing.Point(118, 50);
-            this.numUDCon.Name = "numUDCon";
-            this.numUDCon.Size = new System.Drawing.Size(44, 20);
-            this.numUDCon.TabIndex = 8;
-            this.numUDCon.Value = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
-            // 
             // lbInt
             // 
             this.lbInt.AutoSize = true;
-            this.lbInt.Location = new System.Drawing.Point(183, 23);
+            this.lbInt.Location = new System.Drawing.Point(187, 9);
             this.lbInt.Name = "lbInt";
             this.lbInt.Size = new System.Drawing.Size(61, 13);
             this.lbInt.TabIndex = 11;
             this.lbInt.Text = "Intillegence";
             // 
-            // numUDInt
-            // 
-            this.numUDInt.Location = new System.Drawing.Point(186, 50);
-            this.numUDInt.Name = "numUDInt";
-            this.numUDInt.Size = new System.Drawing.Size(44, 20);
-            this.numUDInt.TabIndex = 10;
-            this.numUDInt.Value = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
-            // 
             // lbWis
             // 
             this.lbWis.AutoSize = true;
-            this.lbWis.Location = new System.Drawing.Point(250, 23);
+            this.lbWis.Location = new System.Drawing.Point(251, 9);
             this.lbWis.Name = "lbWis";
             this.lbWis.Size = new System.Drawing.Size(45, 13);
             this.lbWis.TabIndex = 13;
             this.lbWis.Text = "Wisdom";
             // 
-            // numUDWis
-            // 
-            this.numUDWis.Location = new System.Drawing.Point(253, 50);
-            this.numUDWis.Name = "numUDWis";
-            this.numUDWis.Size = new System.Drawing.Size(44, 20);
-            this.numUDWis.TabIndex = 12;
-            this.numUDWis.Value = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
-            // 
             // lbCha
             // 
             this.lbCha.AutoSize = true;
-            this.lbCha.Location = new System.Drawing.Point(317, 22);
+            this.lbCha.Location = new System.Drawing.Point(302, 9);
             this.lbCha.Name = "lbCha";
             this.lbCha.Size = new System.Drawing.Size(50, 13);
             this.lbCha.TabIndex = 15;
             this.lbCha.Text = "Charisma";
             // 
-            // numUDCha
-            // 
-            this.numUDCha.Location = new System.Drawing.Point(320, 50);
-            this.numUDCha.Name = "numUDCha";
-            this.numUDCha.Size = new System.Drawing.Size(44, 20);
-            this.numUDCha.TabIndex = 14;
-            this.numUDCha.Value = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
-            // 
             // lbPoints
             // 
             this.lbPoints.AutoSize = true;
-            this.lbPoints.Location = new System.Drawing.Point(131, 86);
+            this.lbPoints.Location = new System.Drawing.Point(141, 121);
             this.lbPoints.Name = "lbPoints";
             this.lbPoints.Size = new System.Drawing.Size(87, 13);
             this.lbPoints.TabIndex = 17;
@@ -189,60 +121,242 @@
             // 
             // txtBoxPoints
             // 
-            this.txtBoxPoints.Location = new System.Drawing.Point(158, 102);
+            this.txtBoxPoints.Location = new System.Drawing.Point(168, 137);
             this.txtBoxPoints.Name = "txtBoxPoints";
             this.txtBoxPoints.ReadOnly = true;
             this.txtBoxPoints.Size = new System.Drawing.Size(29, 20);
             this.txtBoxPoints.TabIndex = 18;
             this.txtBoxPoints.Text = "27";
             // 
+            // btnStrIn
+            // 
+            this.btnStrIn.Location = new System.Drawing.Point(12, 25);
+            this.btnStrIn.Name = "btnStrIn";
+            this.btnStrIn.Size = new System.Drawing.Size(33, 23);
+            this.btnStrIn.TabIndex = 19;
+            this.btnStrIn.Text = "+";
+            this.btnStrIn.UseVisualStyleBackColor = true;
+            this.btnStrIn.Click += new System.EventHandler(this.btnStrIn_Click);
+            // 
+            // btnStrDe
+            // 
+            this.btnStrDe.Location = new System.Drawing.Point(12, 83);
+            this.btnStrDe.Name = "btnStrDe";
+            this.btnStrDe.Size = new System.Drawing.Size(33, 23);
+            this.btnStrDe.TabIndex = 20;
+            this.btnStrDe.Text = "-";
+            this.btnStrDe.UseVisualStyleBackColor = true;
+            this.btnStrDe.Click += new System.EventHandler(this.btnStrDe_Click);
+            // 
+            // txtStr
+            // 
+            this.txtStr.Location = new System.Drawing.Point(12, 54);
+            this.txtStr.Name = "txtStr";
+            this.txtStr.ReadOnly = true;
+            this.txtStr.Size = new System.Drawing.Size(33, 20);
+            this.txtStr.TabIndex = 21;
+            this.txtStr.Text = "8";
+            // 
+            // txtDex
+            // 
+            this.txtDex.Location = new System.Drawing.Point(68, 54);
+            this.txtDex.Name = "txtDex";
+            this.txtDex.ReadOnly = true;
+            this.txtDex.Size = new System.Drawing.Size(33, 20);
+            this.txtDex.TabIndex = 24;
+            this.txtDex.Text = "8";
+            // 
+            // btnDexDe
+            // 
+            this.btnDexDe.Location = new System.Drawing.Point(68, 83);
+            this.btnDexDe.Name = "btnDexDe";
+            this.btnDexDe.Size = new System.Drawing.Size(33, 23);
+            this.btnDexDe.TabIndex = 23;
+            this.btnDexDe.Text = "-";
+            this.btnDexDe.UseVisualStyleBackColor = true;
+            // 
+            // btnDexIn
+            // 
+            this.btnDexIn.Location = new System.Drawing.Point(68, 25);
+            this.btnDexIn.Name = "btnDexIn";
+            this.btnDexIn.Size = new System.Drawing.Size(33, 23);
+            this.btnDexIn.TabIndex = 22;
+            this.btnDexIn.Text = "+";
+            this.btnDexIn.UseVisualStyleBackColor = true;
+            // 
+            // txtCon
+            // 
+            this.txtCon.Location = new System.Drawing.Point(122, 54);
+            this.txtCon.Name = "txtCon";
+            this.txtCon.ReadOnly = true;
+            this.txtCon.Size = new System.Drawing.Size(33, 20);
+            this.txtCon.TabIndex = 27;
+            this.txtCon.Text = "8";
+            // 
+            // btnConDe
+            // 
+            this.btnConDe.Location = new System.Drawing.Point(122, 83);
+            this.btnConDe.Name = "btnConDe";
+            this.btnConDe.Size = new System.Drawing.Size(33, 23);
+            this.btnConDe.TabIndex = 26;
+            this.btnConDe.Text = "-";
+            this.btnConDe.UseVisualStyleBackColor = true;
+            // 
+            // btnConIn
+            // 
+            this.btnConIn.Location = new System.Drawing.Point(122, 25);
+            this.btnConIn.Name = "btnConIn";
+            this.btnConIn.Size = new System.Drawing.Size(33, 23);
+            this.btnConIn.TabIndex = 25;
+            this.btnConIn.Text = "+";
+            this.btnConIn.UseVisualStyleBackColor = true;
+            // 
+            // txtInt
+            // 
+            this.txtInt.Location = new System.Drawing.Point(190, 54);
+            this.txtInt.Name = "txtInt";
+            this.txtInt.ReadOnly = true;
+            this.txtInt.Size = new System.Drawing.Size(33, 20);
+            this.txtInt.TabIndex = 30;
+            this.txtInt.Text = "8";
+            // 
+            // btnIntDe
+            // 
+            this.btnIntDe.Location = new System.Drawing.Point(190, 83);
+            this.btnIntDe.Name = "btnIntDe";
+            this.btnIntDe.Size = new System.Drawing.Size(33, 23);
+            this.btnIntDe.TabIndex = 29;
+            this.btnIntDe.Text = "-";
+            this.btnIntDe.UseVisualStyleBackColor = true;
+            // 
+            // btnIntIn
+            // 
+            this.btnIntIn.Location = new System.Drawing.Point(190, 25);
+            this.btnIntIn.Name = "btnIntIn";
+            this.btnIntIn.Size = new System.Drawing.Size(33, 23);
+            this.btnIntIn.TabIndex = 28;
+            this.btnIntIn.Text = "+";
+            this.btnIntIn.UseVisualStyleBackColor = true;
+            // 
+            // txtCha
+            // 
+            this.txtCha.Location = new System.Drawing.Point(305, 54);
+            this.txtCha.Name = "txtCha";
+            this.txtCha.ReadOnly = true;
+            this.txtCha.Size = new System.Drawing.Size(33, 20);
+            this.txtCha.TabIndex = 33;
+            this.txtCha.Text = "8";
+            // 
+            // btnChaDe
+            // 
+            this.btnChaDe.Location = new System.Drawing.Point(305, 83);
+            this.btnChaDe.Name = "btnChaDe";
+            this.btnChaDe.Size = new System.Drawing.Size(33, 23);
+            this.btnChaDe.TabIndex = 32;
+            this.btnChaDe.Text = "-";
+            this.btnChaDe.UseVisualStyleBackColor = true;
+            // 
+            // btnChaIn
+            // 
+            this.btnChaIn.Location = new System.Drawing.Point(305, 25);
+            this.btnChaIn.Name = "btnChaIn";
+            this.btnChaIn.Size = new System.Drawing.Size(33, 23);
+            this.btnChaIn.TabIndex = 31;
+            this.btnChaIn.Text = "+";
+            this.btnChaIn.UseVisualStyleBackColor = true;
+            // 
+            // txtWis
+            // 
+            this.txtWis.Location = new System.Drawing.Point(254, 54);
+            this.txtWis.Name = "txtWis";
+            this.txtWis.ReadOnly = true;
+            this.txtWis.Size = new System.Drawing.Size(33, 20);
+            this.txtWis.TabIndex = 36;
+            this.txtWis.Text = "8";
+            // 
+            // btnWisDe
+            // 
+            this.btnWisDe.Location = new System.Drawing.Point(254, 83);
+            this.btnWisDe.Name = "btnWisDe";
+            this.btnWisDe.Size = new System.Drawing.Size(33, 23);
+            this.btnWisDe.TabIndex = 35;
+            this.btnWisDe.Text = "-";
+            this.btnWisDe.UseVisualStyleBackColor = true;
+            // 
+            // btnWisIn
+            // 
+            this.btnWisIn.Location = new System.Drawing.Point(254, 25);
+            this.btnWisIn.Name = "btnWisIn";
+            this.btnWisIn.Size = new System.Drawing.Size(33, 23);
+            this.btnWisIn.TabIndex = 34;
+            this.btnWisIn.Text = "+";
+            this.btnWisIn.UseVisualStyleBackColor = true;
+            // 
             // FormPointBuy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 125);
+            this.ClientSize = new System.Drawing.Size(359, 174);
+            this.Controls.Add(this.txtWis);
+            this.Controls.Add(this.btnWisDe);
+            this.Controls.Add(this.btnWisIn);
+            this.Controls.Add(this.txtCha);
+            this.Controls.Add(this.btnChaDe);
+            this.Controls.Add(this.btnChaIn);
+            this.Controls.Add(this.txtInt);
+            this.Controls.Add(this.btnIntDe);
+            this.Controls.Add(this.btnIntIn);
+            this.Controls.Add(this.txtCon);
+            this.Controls.Add(this.btnConDe);
+            this.Controls.Add(this.btnConIn);
+            this.Controls.Add(this.txtDex);
+            this.Controls.Add(this.btnDexDe);
+            this.Controls.Add(this.btnDexIn);
+            this.Controls.Add(this.txtStr);
+            this.Controls.Add(this.btnStrDe);
+            this.Controls.Add(this.btnStrIn);
             this.Controls.Add(this.txtBoxPoints);
             this.Controls.Add(this.lbPoints);
             this.Controls.Add(this.lbCha);
-            this.Controls.Add(this.numUDCha);
             this.Controls.Add(this.lbWis);
-            this.Controls.Add(this.numUDWis);
             this.Controls.Add(this.lbInt);
-            this.Controls.Add(this.numUDInt);
             this.Controls.Add(this.lbCon);
-            this.Controls.Add(this.numUDCon);
             this.Controls.Add(this.lbDex);
-            this.Controls.Add(this.numUDDex);
             this.Controls.Add(this.lbStr);
-            this.Controls.Add(this.numUDStr);
             this.Name = "FormPointBuy";
             this.Text = "FormPointBuy";
             this.Load += new System.EventHandler(this.FormPointBuy_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numUDStr)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDDex)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDCon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDInt)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDWis)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDCha)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.NumericUpDown numUDStr;
         private System.Windows.Forms.Label lbStr;
         private System.Windows.Forms.Label lbDex;
-        private System.Windows.Forms.NumericUpDown numUDDex;
         private System.Windows.Forms.Label lbCon;
-        private System.Windows.Forms.NumericUpDown numUDCon;
         private System.Windows.Forms.Label lbInt;
-        private System.Windows.Forms.NumericUpDown numUDInt;
         private System.Windows.Forms.Label lbWis;
-        private System.Windows.Forms.NumericUpDown numUDWis;
         private System.Windows.Forms.Label lbCha;
-        private System.Windows.Forms.NumericUpDown numUDCha;
         private System.Windows.Forms.Label lbPoints;
         private System.Windows.Forms.TextBox txtBoxPoints;
+        private System.Windows.Forms.Button btnStrIn;
+        private System.Windows.Forms.Button btnStrDe;
+        private System.Windows.Forms.TextBox txtStr;
+        private System.Windows.Forms.TextBox txtDex;
+        private System.Windows.Forms.Button btnDexDe;
+        private System.Windows.Forms.Button btnDexIn;
+        private System.Windows.Forms.TextBox txtCon;
+        private System.Windows.Forms.Button btnConDe;
+        private System.Windows.Forms.Button btnConIn;
+        private System.Windows.Forms.TextBox txtInt;
+        private System.Windows.Forms.Button btnIntDe;
+        private System.Windows.Forms.Button btnIntIn;
+        private System.Windows.Forms.TextBox txtCha;
+        private System.Windows.Forms.Button btnChaDe;
+        private System.Windows.Forms.Button btnChaIn;
+        private System.Windows.Forms.TextBox txtWis;
+        private System.Windows.Forms.Button btnWisDe;
+        private System.Windows.Forms.Button btnWisIn;
     }
 }

@@ -314,7 +314,7 @@ namespace ProjectMuteSheet
             }
             else if (!checkPointBuy.Checked)
             {
-                checkPointBuy.Checked = false;
+                btnPoints.Visible = false;
             }
             
         }

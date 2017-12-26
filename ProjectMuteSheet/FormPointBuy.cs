@@ -36,61 +36,17 @@ namespace ProjectMuteSheet
             if (txtBoxPoints.Text == "-1")
             {
                 txtBoxPoints.Text = "27";
-                numUDStr.Value = 8;
-                numUDDex.Value = 8;
-                numUDCon.Value = 8;
-                numUDInt.Value = 8;
-                numUDWis.Value = 8;
-                numUDCha.Value = 8;
+                txtStr.Text = "8";
+             
             }
         }
 
-        private void numUDStr_ValueChanged(object sender, EventArgs e)
+
+        private void btnStrIn_Click(object sender, EventArgs e)
         {
-            int val = Convert.ToInt32(numUDStr.Value);
-            switch (val)
-            {
-                case 8:
-                    break;
-                case 9:
-                        points -= 1;
-                    break;
-                case 10:
-                    points -= 2;
-                    break;
-                case 11:
-                    points -= 3;
-                    break;
-                case 12:
-                    points -= 4;
-                    break;
-                case 13:
-                    points -= 5;
-                    break;
-                case 14:
-                    points -= 7;
-                    break;
-                case 15:
-                    points -= 9;
-                    break;
-                default:
-                    numUDStr.Value = 8;
-                    break;
-            }
-
-            if (points < 0)
-            {
-                points = 27;
-                //txtBoxPoints.Text = "27";
-                numUDStr.Value = 8;
-            }
-
-            txtBoxPoints.Text = points.ToString();
-        }
-
-        private void numUDDex_ValueChanged(object sender, EventArgs e)
-        {
-            int val = Convert.ToInt32(numUDDex.Value);
+            int val = Convert.ToInt32(txtStr.Text);
+            val++;
+            txtStr.Text = val.ToString();
             switch (val)
             {
                 case 8:
@@ -117,19 +73,77 @@ namespace ProjectMuteSheet
                     points -= 9;
                     break;
                 default:
-                    numUDDex.Value = 8;
+                    txtStr.Text = "8";
                     break;
             }
 
             if (points < 0)
             {
                 points = 27;
-                //txtBoxPoints.Text = "27";
-                numUDDex.Value = 8;
+                txtStr.Text = "8";
+}
+            txtBoxPoints.Text = points.ToString();
+
+        }
+
+        private void btnStrDe_Click(object sender, EventArgs e)
+        {
+            PointsDec(txtStr.Text);
+        }
+
+        private string PointsDec(string input)
+        {
+            int val = Convert.ToInt32(input);
+
+            switch (val)
+            {
+                case 8:
+                    break;
+                case 9:
+                    points += 1;
+                    break;
+                case 10:
+                    points += 2;
+                    break;
+                case 11:
+                    points += 3;
+                    break;
+                case 12:
+                    points += 4;
+                    break;
+                case 13:
+                    points += 5;
+                    break;
+                case 14:
+                    points += 7;
+                    break;
+                case 15:
+                    points += 9;
+                    break;
+                default:
+                    return "8";        
+            }
+
+            if (points < 0)
+            {
+                points = 27;
+                return "8";
+            }
+
+            if (Convert.ToInt32(input) < 8)
+            {
+                return "8";
             }
 
             txtBoxPoints.Text = points.ToString();
+
+            val--;
+
+            string newstring = val.ToString();
+
+            return newstring;      
         }
     }
+
     }
 
