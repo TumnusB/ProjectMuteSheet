@@ -54,6 +54,7 @@
             this.txtWis = new System.Windows.Forms.TextBox();
             this.btnWisDe = new System.Windows.Forms.Button();
             this.btnWisIn = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbStr
@@ -174,6 +175,7 @@
             this.btnDexDe.TabIndex = 23;
             this.btnDexDe.Text = "-";
             this.btnDexDe.UseVisualStyleBackColor = true;
+            this.btnDexDe.Click += new System.EventHandler(this.btnDexDe_Click);
             // 
             // btnDexIn
             // 
@@ -183,6 +185,7 @@
             this.btnDexIn.TabIndex = 22;
             this.btnDexIn.Text = "+";
             this.btnDexIn.UseVisualStyleBackColor = true;
+            this.btnDexIn.Click += new System.EventHandler(this.btnDexIn_Click);
             // 
             // txtCon
             // 
@@ -201,6 +204,7 @@
             this.btnConDe.TabIndex = 26;
             this.btnConDe.Text = "-";
             this.btnConDe.UseVisualStyleBackColor = true;
+            this.btnConDe.Click += new System.EventHandler(this.btnConDe_Click);
             // 
             // btnConIn
             // 
@@ -210,6 +214,7 @@
             this.btnConIn.TabIndex = 25;
             this.btnConIn.Text = "+";
             this.btnConIn.UseVisualStyleBackColor = true;
+            this.btnConIn.Click += new System.EventHandler(this.btnConIn_Click);
             // 
             // txtInt
             // 
@@ -228,6 +233,7 @@
             this.btnIntDe.TabIndex = 29;
             this.btnIntDe.Text = "-";
             this.btnIntDe.UseVisualStyleBackColor = true;
+            this.btnIntDe.Click += new System.EventHandler(this.btnIntDe_Click);
             // 
             // btnIntIn
             // 
@@ -237,6 +243,7 @@
             this.btnIntIn.TabIndex = 28;
             this.btnIntIn.Text = "+";
             this.btnIntIn.UseVisualStyleBackColor = true;
+            this.btnIntIn.Click += new System.EventHandler(this.btnIntIn_Click);
             // 
             // txtCha
             // 
@@ -255,6 +262,7 @@
             this.btnChaDe.TabIndex = 32;
             this.btnChaDe.Text = "-";
             this.btnChaDe.UseVisualStyleBackColor = true;
+            this.btnChaDe.Click += new System.EventHandler(this.btnChaDe_Click);
             // 
             // btnChaIn
             // 
@@ -264,6 +272,7 @@
             this.btnChaIn.TabIndex = 31;
             this.btnChaIn.Text = "+";
             this.btnChaIn.UseVisualStyleBackColor = true;
+            this.btnChaIn.Click += new System.EventHandler(this.btnChaIn_Click);
             // 
             // txtWis
             // 
@@ -282,6 +291,7 @@
             this.btnWisDe.TabIndex = 35;
             this.btnWisDe.Text = "-";
             this.btnWisDe.UseVisualStyleBackColor = true;
+            this.btnWisDe.Click += new System.EventHandler(this.btnWisDe_Click);
             // 
             // btnWisIn
             // 
@@ -291,12 +301,24 @@
             this.btnWisIn.TabIndex = 34;
             this.btnWisIn.Text = "+";
             this.btnWisIn.UseVisualStyleBackColor = true;
+            this.btnWisIn.Click += new System.EventHandler(this.btnWisIn_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(144, 163);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 37;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // FormPointBuy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 174);
+            this.ClientSize = new System.Drawing.Size(355, 205);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.txtWis);
             this.Controls.Add(this.btnWisDe);
             this.Controls.Add(this.btnWisIn);
@@ -358,5 +380,6 @@
         private System.Windows.Forms.TextBox txtWis;
         private System.Windows.Forms.Button btnWisDe;
         private System.Windows.Forms.Button btnWisIn;
+        private System.Windows.Forms.Button btnReset;
     }
 }
