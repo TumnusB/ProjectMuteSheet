@@ -67,22 +67,22 @@ namespace ProjectMuteSheet
                     points += 1;
                     break;
                 case 10:
-                    points += 2;
+                    points += 1;
                     break;
                 case 11:
-                    points += 3;
+                    points += 1;
                     break;
                 case 12:
-                    points += 4;
+                    points += 1;
                     break;
                 case 13:
-                    points += 5;
+                    points += 1;
                     break;
                 case 14:
-                    points += 7;
+                    points += 2;
                     break;
                 case 15:
-                    points += 9;
+                    points += 2;
                     break;
                 default:
                     return "8";        
@@ -94,7 +94,7 @@ namespace ProjectMuteSheet
                 return "8";
             }
 
-            if (Convert.ToInt32(input) < 8)
+            if (Convert.ToInt32(input) <= 8)
             {
                 return "8";
             }
@@ -112,30 +112,37 @@ namespace ProjectMuteSheet
         {
             int val = Convert.ToInt32(input);
 
+            val++;
+
+            //MessageBox.Show(val.ToString());
+
+            
+
             switch (val)
             {
                 case 8:
+                    MessageBox.Show(val.ToString());
                     break;
                 case 9:
                     points -= 1;
                     break;
                 case 10:
-                    points -= 2;
+                    points -= 1;
                     break;
                 case 11:
-                    points -= 3;
+                    points -= 1;
                     break;
                 case 12:
-                    points -= 4;
+                    points -= 1;
                     break;
                 case 13:
-                    points -= 5;
+                    points -= 1;
                     break;
                 case 14:
-                    points -= 7;
+                    points -= 2;
                     break;
                 case 15:
-                    points -= 9;
+                    points -= 2;
                     break;
                 default:
                     return "8";
@@ -149,7 +156,7 @@ namespace ProjectMuteSheet
             }
             txtBoxPoints.Text = points.ToString();
 
-            val++;
+            
 
             string newstring = val.ToString();
 
