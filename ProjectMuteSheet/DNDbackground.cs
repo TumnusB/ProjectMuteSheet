@@ -7,9 +7,9 @@ using System.Xml.Linq;
 
 namespace ProjectMuteSheet
 {
-    /// <summary>
-    /// Creates a DND Background
-    /// </summary>
+    ///<summary>
+    ///Creates a DND Background
+    ///</summary>
     public class DNDbackground
     {
 
@@ -97,11 +97,11 @@ namespace ProjectMuteSheet
             proficency = "";
         }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="DNDbackground"/> class.
-        /// </summary>
-        /// <param name="name">Enter String for name.</param>
-        /// <param name="proficency">Enter String for proficiency.</param>
+        ///<summary>
+        ///Initializes a new instance of the <see cref="DNDbackground"/> class.
+        ///</summary>
+        ///<param name="name">Enter String for name.</param>
+        ///<param name="proficency">Enter String for proficiency.</param>
         public DNDbackground(string name, string proficency)
         {
             name = this.name;
