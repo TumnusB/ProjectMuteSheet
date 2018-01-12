@@ -14,10 +14,13 @@ namespace ProjectMuteSheet
 {
     public partial class FormDnDSheet : Form
     {
+
+        
+
         public FormDnDSheet()
         {
             InitializeComponent();
-
+            
         }
 
         /// <summary>
@@ -325,6 +328,7 @@ namespace ProjectMuteSheet
 
         private void btnPoints_Click(object sender, EventArgs e)
         {
+
             FormPointBuy formPointBuy = new FormPointBuy();
             formPointBuy.ShowDialog();
 
@@ -337,5 +341,3 @@ namespace ProjectMuteSheet
         }
     }
 }
-
-

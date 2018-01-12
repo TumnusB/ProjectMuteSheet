@@ -179,7 +179,7 @@ namespace ProjectMuteSheet
                 ///
                 ///<summary>
                 ///We create a list of XElements called proficiency to do this we search for elements called class then proficiency
-                ///this is searched and then automaticlly made into a list without needing to loop trough each one indvidually
+                ///this is searched and then automatically made into a list without needing to loop trough each one individually
                 ///this is then done for each pair we require
                 ///</summary>
                 classproficiency = compendium.Elements("class").Select(x => x.Element("proficiency")).ToList();

@@ -55,6 +55,7 @@
             this.btnWisDe = new System.Windows.Forms.Button();
             this.btnWisIn = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
+            this.btnAckScore = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbStr
@@ -114,7 +115,7 @@
             // lbPoints
             // 
             this.lbPoints.AutoSize = true;
-            this.lbPoints.Location = new System.Drawing.Point(141, 121);
+            this.lbPoints.Location = new System.Drawing.Point(136, 119);
             this.lbPoints.Name = "lbPoints";
             this.lbPoints.Size = new System.Drawing.Size(87, 13);
             this.lbPoints.TabIndex = 17;
@@ -122,7 +123,7 @@
             // 
             // txtBoxPoints
             // 
-            this.txtBoxPoints.Location = new System.Drawing.Point(168, 137);
+            this.txtBoxPoints.Location = new System.Drawing.Point(163, 135);
             this.txtBoxPoints.Name = "txtBoxPoints";
             this.txtBoxPoints.ReadOnly = true;
             this.txtBoxPoints.Size = new System.Drawing.Size(29, 20);
@@ -305,7 +306,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(144, 163);
+            this.btnReset.Location = new System.Drawing.Point(80, 166);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 23);
             this.btnReset.TabIndex = 37;
@@ -313,11 +314,22 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
+            // btnAckScore
+            // 
+            this.btnAckScore.Location = new System.Drawing.Point(190, 166);
+            this.btnAckScore.Name = "btnAckScore";
+            this.btnAckScore.Size = new System.Drawing.Size(140, 23);
+            this.btnAckScore.TabIndex = 38;
+            this.btnAckScore.Text = "Accept Scores";
+            this.btnAckScore.UseVisualStyleBackColor = true;
+            this.btnAckScore.Click += new System.EventHandler(this.btnAckScore_Click);
+            // 
             // FormPointBuy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 205);
+            this.ClientSize = new System.Drawing.Size(370, 198);
+            this.Controls.Add(this.btnAckScore);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.txtWis);
             this.Controls.Add(this.btnWisDe);
@@ -381,5 +393,6 @@
         private System.Windows.Forms.Button btnWisDe;
         private System.Windows.Forms.Button btnWisIn;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnAckScore;
     }
 }

@@ -108,6 +108,12 @@ namespace ProjectMuteSheet
         {
             p.Reset(txtStr, txtDex, txtCon, txtInt, txtWis, txtCha, txtBoxPoints);
         }
+
+        private void btnAckScore_Click(object sender, EventArgs e)
+        {
+           
+
+        }
     }
 
     }
