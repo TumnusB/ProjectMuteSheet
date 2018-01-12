@@ -28,11 +28,12 @@ namespace ProjectMuteSheet
         int cha = 0;
 
         /// <summary>
-        /// Creates a public instance of DNDimport named Import
+        /// Creates a public instance of DNDCreateDataSet named dataset
         /// in the first scope to ensure
         /// its accessible anywhere on the form
         /// </summary>
-        public DNDimport Import = new DNDimport();
+        public DNDCreateDataSet dataset = new DNDCreateDataSet();
+
         /// <summary>
         /// Creates a public instance of DNDdata named DNDdata
         /// in the first scope to ensure
@@ -62,7 +63,7 @@ namespace ProjectMuteSheet
                 TopMost = false;
             }
 
-            DNDdata = Import.XMLimport();
+            DNDdata = dataset.DataGen();
 
             ///This For Loop will loop through all the 
             ///The data stored in ClassList which are 

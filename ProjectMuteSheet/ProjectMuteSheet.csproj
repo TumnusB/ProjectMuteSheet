@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DNDCreateDataSet.cs" />
     <Compile Include="DNDdata.cs" />
     <Compile Include="DNDimport.cs" />
     <Compile Include="DNDbackground.cs" />
