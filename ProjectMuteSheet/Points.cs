@@ -51,7 +51,7 @@ namespace ProjectMuteSheet
         public string PointsDec(string input, TextBox pointbox)
         {
             int val = Convert.ToInt32(input);
-            
+
             {
                 switch (val)
                 {
@@ -78,7 +78,7 @@ namespace ProjectMuteSheet
                     case 15:
                         points += 2;
                         break;
-                    
+
                 }
             }
 
@@ -106,51 +106,51 @@ namespace ProjectMuteSheet
         {
             int val = Convert.ToInt32(input);
 
-            
+
 
             if (!maxpoints)
             {
                 val++;
             }
-            
-            
-                switch (val)
-                {
-                    case 8:
-                        break;
-                    case 9:
-                        points -= 1;
-                        break;
-                    case 10:
-                        points -= 1;
-                        break;
-                    case 11:
-                        points -= 1;
-                        break;
-                    case 12:
-                        points -= 1;
-                        break;
-                    case 13:
-                        points -= 1;
-                        break;
-                    case 14:
-                        points -= 2;
-                        break;
-                    case 15:
-                        points -= 2;
-                        break;
-                    case 16:
-                        val = 15;
-                        break;
-                    
 
-                }
-            
+
+            switch (val)
+            {
+                case 8:
+                    break;
+                case 9:
+                    points -= 1;
+                    break;
+                case 10:
+                    points -= 1;
+                    break;
+                case 11:
+                    points -= 1;
+                    break;
+                case 12:
+                    points -= 1;
+                    break;
+                case 13:
+                    points -= 1;
+                    break;
+                case 14:
+                    points -= 2;
+                    break;
+                case 15:
+                    points -= 2;
+                    break;
+                case 16:
+                    val = 15;
+                    break;
+
+
+            }
+
 
             if (points == 0)
             {
                 MessageBox.Show("Spent Points");
-                
+
             }
 
             if (points < 0)
