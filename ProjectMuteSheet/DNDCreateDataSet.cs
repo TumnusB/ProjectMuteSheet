@@ -8,32 +8,44 @@ namespace ProjectMuteSheet
 {
     public class DNDCreateDataSet
     {
-        ///Create Instance of <see cref="DNDimport"/>
+        /// <summary>
+        ///Creates Instance of <see cref="DNDimport"/>
         ///To gather the XML Data
+        /// </summary>
         DNDimport import = new DNDimport();
 
+        ///<summary>
         ///Create Instance of <see cref="DNDdata"/>
         ///to store the XML DataSet in
+        ///</summary>
         DNDdata data = new DNDdata();
 
         /// <summary>
-        /// Datas the gen.
+        /// DataGen - Will Take the parsed data from
+        /// <see cref="DNDimport"/> and put in into 
+        /// <see cref="DNDclass"/>, <see cref="DNDbackground"/>, <see cref="DNDrace"/>
+        /// these are then stored in <see cref="DNDdata"/>
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        /// <see cref="DNDdata"/>
+        /// </returns>
         public DNDdata DataGen()
         {
             import.XMLimport();
-            
 
+            ///<summary>
             ///We check that the amount of backgrounds we have
-            ///match the amount of proficencies as these should always match
+            ///match the amount of proficiencies as these should always match
+            ///</summary>
             if (import.Backgroundname.Count == import.Backgroundproficiency.Count)
             {
-
+                ///<summary>
                 ///We create an instance of <see cref="DNDbackground"/>
                 ///this will be used inside the loop
+                ///</summary>
                 DNDbackground newbackground;
-                ///Due to the fact we know that both the bgname and bgprof are the same
+
+                ///Due to the fact we know that both the <see cref="DNDimport.backgroundproficiency"/> and <see cref="DNDimport.backgroundname"/> are the same
                 ///we can just use the count of one of them for the loop
                 for (int i = 0; i < import.Backgroundproficiency.Count; i++)
                 {

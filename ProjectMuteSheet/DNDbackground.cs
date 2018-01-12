@@ -18,11 +18,11 @@ namespace ProjectMuteSheet
         /// </summary>
         private string name;
         /// <summary>
-        /// The proficency of the background
+        /// The proficiency of the background
         /// </summary>
         private string proficency;
         /// <summary>
-        /// The proficency broken down into a list of proficiencies
+        /// The proficiency broken down into a list of proficiencies
         /// </summary>
         private List<string> proficiencies = new List<string>();
 
@@ -30,7 +30,7 @@ namespace ProjectMuteSheet
         /// Gets or sets the proficiencies.
         /// </summary>
         /// <value>
-        /// Retuns the list proficiencies.
+        /// Returns the list proficiencies.
         /// </value>
         public List<string> Proficiencies
         {
@@ -69,10 +69,10 @@ namespace ProjectMuteSheet
         }
 
         /// <summary>
-        /// Gets or sets the proficency.
+        /// Gets or sets the proficiency.
         /// </summary>
         /// <value>
-        /// Returns the proficency.
+        /// Returns the proficiency.
         /// </value>
         public string Proficency
         {
@@ -101,7 +101,7 @@ namespace ProjectMuteSheet
         /// Initializes a new instance of the <see cref="DNDbackground"/> class.
         /// </summary>
         /// <param name="name">Enter String for name.</param>
-        /// <param name="proficency">Enter String for proficency.</param>
+        /// <param name="proficency">Enter String for proficiency.</param>
         public DNDbackground(string name, string proficency)
         {
             name = this.name;

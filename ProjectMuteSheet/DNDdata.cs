@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ProjectMuteSheet
 {
     /// <summary>
-    /// Contains the lists for <see cref="DNDbackground"/> and <see cref="DNDclass"/>.
+    /// Contains the lists for <see cref="DNDbackground"/>, <see cref="DNDclass"/> and <see cref="DNDrace"/>.
     /// </summary>
     public class DNDdata
     {
@@ -21,7 +21,7 @@ namespace ProjectMuteSheet
         /// Gets or sets the background list.
         /// </summary>
         /// <value>
-        /// Retruns the background list.
+        /// Returns the background list.
         /// </value>
         public List<DNDbackground> BackgroundList
        {
@@ -53,7 +53,7 @@ namespace ProjectMuteSheet
         /// Gets or sets the class list.
         /// </summary>
         /// <value>
-        /// Retruns the class list.
+        /// Returns the class list.
         /// </value>
         public List<DNDclass> ClassList
        {
@@ -77,15 +77,15 @@ namespace ProjectMuteSheet
        }
 
         /// <summary>
-        ///  Creates a list of <see cref="DNDbackground"/> named backgroundlist
+        ///  Creates a list of <see cref="DNDrace"/> named racelist
         /// </summary>
         private List<DNDrace> racelist = new List<DNDrace>();
 
         /// <summary>
-        /// Gets or sets the background list.
+        /// Gets or sets the racelist.
         /// </summary>
         /// <value>
-        /// Retruns the background list.
+        /// Returns the race list.
         /// </value>
         public List<DNDrace> RaceList
         {
@@ -102,7 +102,7 @@ namespace ProjectMuteSheet
         /// <summary>
         /// Adds the specified background to the list.
         /// </summary>
-        /// <param name="newbackground">Enter Details for the background <see cref="DNDbackground"/>.</param>
+        /// <param name="newrace">Enter Details for the background <see cref="DNDrace"/>.</param>
         public void Addrace(DNDrace newrace)
         {
             RaceList.Add(newrace);

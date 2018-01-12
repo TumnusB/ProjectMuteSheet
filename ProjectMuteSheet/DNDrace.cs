@@ -72,8 +72,8 @@ namespace ProjectMuteSheet
         /// <summary>
         /// Initializes a new instance of the <see cref="DNDrace"/> class.
         /// </summary>
-        /// <param name="name">The name.</param>
-        /// <param name="ability">The ability.</param>
+        /// <param name="name">The name of the race.</param>
+        /// <param name="ability">The ability of the race.</param>
         public DNDrace(string name, string ability)
         {
             name = this.name;

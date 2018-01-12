@@ -7,59 +7,72 @@ namespace ProjectMuteSheetTest
     [TestClass]
     public class DNDClassTest
     {
-        //Test Constructors, Properties, Methods 
 
+        /// <summary>
+        /// Test that <see cref="DNDclass"/> Constructor is not Null
+        /// </summary>
         [TestMethod]
         public void DNDclassTest_Constuctor_NotNull()
         {
-            //Arrange
-            string name = "testname";
-            string prof = "testprof";
-            //Act
+            ///Arrange
+            string name = "Artificer";
+            string prof = "Intelligence, Constitution";
+            ///Act
             DNDclass testclass = new DNDclass(name, prof);
-            //Assert
+            ///Assert
             Assert.IsNotNull(testclass, "Object not initialized");
         }
 
+        /// <summary>
+        /// Test that <see cref="DNDclass"/> Empty Constructor is not Null
+        /// </summary>
         [TestMethod]
         public void DNDclassTest_EmptyConstuctor_NotNull()
         {
-            //Arrange & Act
+            ///Arrange & Act
             DNDclass emptycon = new DNDclass();
-            //Assert
+            ///Assert
             Assert.IsNotNull(emptycon, "Object not initialized");
         }
-
+        /// <summary>
+        /// Test that <see cref="DNDclass.Name"/> is working
+        /// </summary>
         [TestMethod]
         public void DNDclassTest_Name()
         {
-            //Arrange
+            ///Arrange
             DNDclass testclass = new DNDclass();
-            //Act
+            ///Act
             testclass.Name = "Barbarian";
-            //Assert
-            Assert.AreEqual(testclass.Name, "Barbarian", "Propety Assigning Incorrect Value");
+            ///Assert
+            Assert.AreEqual(testclass.Name, "Barbarian", "Property Assigning Incorrect Value");
         }
 
+        /// <summary>
+        /// Test that <see cref="DNDclass.Proficency"/> is working
+        /// </summary>
         [TestMethod]
         public void DNDclassTest_Proficency()
         {
-            //Arrange
+            ///Arrange
             DNDclass testclass = new DNDclass();
-            //Act
+            ///Act
             testclass.Proficency = "Intelligence, Constitution";
-            //Assert
-            Assert.AreEqual(testclass.Proficency, "Intelligence, Constitution", "Propety Assigning Incorrect Value");
+            ///Assert
+            Assert.AreEqual(testclass.Proficency, "Intelligence, Constitution", "Property Assigning Incorrect Value");
         }
 
+        /// <summary>
+        /// Test that <see cref="DNDclass.Proficiencies"/> is working
+        /// </summary>
         [TestMethod]
         public void DNDclassTest_Proficiencies()
         {
-            //Arrange
+            ///Arrange
             DNDclass testclass = new DNDclass();
-            //Act
+            ///Act
             testclass.Proficiencies.Add("Intelligence, Constitution");
-            //Assert
+            ///Assert
             Assert.AreEqual(testclass.Proficiencies[0].ToString(), "Intelligence, Constitution", "Propety Assigning Incorrect Value");
         }
 

@@ -7,60 +7,70 @@ namespace ProjectMuteSheetTest
     [TestClass]
     public class DNDRaceTest
     {
-        //Test Consturctors, Propetites, Methods 
 
+        /// <summary>
+        /// Test that <see cref="DNDrace"/> Constructor is not Null
+        /// </summary>
         [TestMethod]
         public void DNDraceTest_Constuctor_NotNull()
         {
-            //Arrange
+            ///Arrange
             string name = "Aarakocra";
             string ability = "Dex 2, Wis 1";
-            //Act
+            ///Act
             DNDrace testclass = new DNDrace(name, ability);
-            //Assert
+            ///Assert
             Assert.IsNotNull(testclass, "Object not initialized");
         }
-
+        /// <summary>
+        /// Test that <see cref="DNDrace"/> Empty Constructor is not Null
+        /// </summary>
         [TestMethod]
         public void DNDraceTest_EmptyConstuctor_NotNull()
         {
-            //Arrange & Act
+            ///Arrange & Act
             DNDrace emptycon = new DNDrace();
-            //Assert
+            ///Assert
             Assert.IsNotNull(emptycon, "Object not initialized");
         }
-
+        /// <summary>
+        /// Test that <see cref="DNDrace.Name"/> is working
+        /// </summary>
         [TestMethod]
         public void DNDraceTest_Name()
         {
-            //Arrange
+            ///Arrange
             DNDrace testclass = new DNDrace();
-            //Act
+            ///Act
             testclass.Name = "Aarakocra";
-            //Assert
-            Assert.AreEqual(testclass.Name, "Aarakocra", "Propety Assigning Incorrect Value");
+            ///Assert
+            Assert.AreEqual(testclass.Name, "Aarakocra", "Property Assigning Incorrect Value");
         }
-
+        /// <summary>
+        /// Test that <see cref="DNDrace.Proficency"/> is working
+        /// </summary>
         [TestMethod]
         public void DNDraceTest_Ability()
         {
-            //Arrange
+            ///Arrange
             DNDrace testclass = new DNDrace();
-            //Act
+            ///Act
             testclass.Ability = "Dex 2, Wis 1";
-            //Assert
-            Assert.AreEqual(testclass.Ability, "Dex 2, Wis 1", "Propety Assigning Incorrect Value");
+            ///Assert
+            Assert.AreEqual(testclass.Ability, "Dex 2, Wis 1", "Property Assigning Incorrect Value");
         }
-
+        /// <summary>
+        /// Test that <see cref="DNDrace.Proficiencies"/> is working
+        /// </summary>
         [TestMethod]
         public void DNDraceTest_Abilities()
         {
-            //Arrange
+            ///Arrange
             DNDrace testclass = new DNDrace();
-            //Act
+            ///Act
             testclass.Abilities.Add("Dex 2, Wis 1");
-            //Assert
-            Assert.AreEqual(testclass.Abilities[0].ToString(), "Dex 2, Wis 1", "Propety Assigning Incorrect Value");
+            ///Assert
+            Assert.AreEqual(testclass.Abilities[0].ToString(), "Dex 2, Wis 1", "Property Assigning Incorrect Value");
         }
 
 

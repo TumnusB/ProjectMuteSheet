@@ -10,25 +10,25 @@ namespace ProjectMuteSheet
     class Points
     {
         /// <summary>
-        /// The points
+        /// The value for the points
         /// </summary>
         public int points = 27;
 
         /// <summary>
-        /// The maxpoints
+        /// Boolean to check if the points hit the max
         /// </summary>
         Boolean maxpoints = false;
 
         /// <summary>
-        /// Resets the specified att1.
+        /// Resets the point buy form.
         /// </summary>
-        /// <param name="att1">The att1.</param>
-        /// <param name="att2">The att2.</param>
-        /// <param name="att3">The att3.</param>
-        /// <param name="att4">The att4.</param>
-        /// <param name="att5">The att5.</param>
-        /// <param name="att6">The att6.</param>
-        /// <param name="pointbox">The pointbox.</param>
+        /// <param name="att1">TextBox that contains a Attribute.</param>
+        /// <param name="att2">TextBox that contains a Attribute.</param>
+        /// <param name="att3">TextBox that contains a Attribute.</param>
+        /// <param name="att4">TextBox that contains a Attribute.</param>
+        /// <param name="att5">TextBox that contains a Attribute.</param>
+        /// <param name="att6">TextBox that contains a Attribute.</param>
+        /// <param name="pointbox">The TextBox that contains the Points.</param>
         public void Reset(TextBox att1, TextBox att2, TextBox att3, TextBox att4, TextBox att5, TextBox att6, TextBox pointbox)
         {
             att1.Text = "8";
@@ -41,12 +41,11 @@ namespace ProjectMuteSheet
 
         }
 
-
         /// <summary>
-        /// Pointses the decimal.
+        /// Decreases the current points.
         /// </summary>
-        /// <param name="input">The input.</param>
-        /// <param name="pointbox">The pointbox.</param>
+        /// <param name="input">String Input for the Point decrease calculation.</param>
+        /// <param name="pointbox">The TextBox that contains the Points.</param>
         /// <returns></returns>
         public string PointsDec(string input, TextBox pointbox)
         {
@@ -97,10 +96,10 @@ namespace ProjectMuteSheet
         }
 
         /// <summary>
-        /// Pointses the inc.
+        /// Increases the current points.
         /// </summary>
-        /// <param name="input">The input.</param>
-        /// <param name="pointbox">The pointbox.</param>
+        /// <param name="input">String Input for the Point decrease calculation.</param>
+        /// <param name="pointbox">The TextBox that contains the Points.</param>
         /// <returns></returns>
         public string PointsInc(string input, TextBox pointbox)
         {
@@ -143,21 +142,6 @@ namespace ProjectMuteSheet
                     val = 15;
                     break;
 
-
-            }
-
-
-            if (points == 0)
-            {
-                MessageBox.Show("Spent Points");
-
-            }
-
-            if (points < 0)
-            {
-                MessageBox.Show("Stop");
-                points = 0;
-                maxpoints = true;
 
             }
 

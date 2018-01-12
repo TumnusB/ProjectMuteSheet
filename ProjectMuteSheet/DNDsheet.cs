@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ProjectMuteSheet
 {
     /// <summary>
-    /// This class stores fuctions that 
+    /// This class stores functions that 
     /// generates items that would be
     /// on a DND 5E Sheet
     /// </summary>
@@ -28,7 +28,7 @@ namespace ProjectMuteSheet
         {
             ///<summary>
             ///This checks if the value has no data if it does it
-            ///passes out N/A to where the fuction is called
+            ///passes out N/A to where the function is called
             ///</summary>
             if (abilityscoremodifier == "")
             {
@@ -123,7 +123,7 @@ namespace ProjectMuteSheet
         }
 
         /// <summary>
-        /// Calculates the level proficency.
+        /// Calculates the level proficiency.
         /// </summary>
         /// <param name="level">level takes a string</param>
         /// <returns>

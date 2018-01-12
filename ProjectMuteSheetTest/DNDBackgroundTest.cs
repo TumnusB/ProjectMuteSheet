@@ -7,60 +7,73 @@ namespace ProjectMuteSheetTest
     [TestClass]
     public class DNDBackgroundTest
     {
-        //Test Consturctors, Propetites, Methods 
 
+
+        /// <summary>
+        /// Check that <see cref="DNDbackground"/> Constructor is not Null.
+        /// </summary>
         [TestMethod]
-        public void DNDBackgroundTest_Constuctor_NotNull()
+        public void DNDBackgroundTest_Constructor_NotNull()
         {
-            //Arrange
+            ///Arrange
             string name = "Acolyte";
             string prof = "Insight, Religion";
-            //Act
+            ///Act
             DNDbackground testclass = new DNDbackground(name, prof);
-            //Assert
+            ///Assert
             Assert.IsNotNull(testclass, "Object not initialized");
         }
 
+        /// <summary>
+        /// Check that <see cref="DNDbackground"/>  Empty Constructor is not Null.
+        /// </summary>
         [TestMethod]
         public void DNDBackgroundTest_EmptyConstuctor_NotNull()
         {
-            //Arrange & Act
+            ///Arrange & Act
             DNDbackground emptycon = new DNDbackground();
-            //Assert
+            ///Assert
             Assert.IsNotNull(emptycon, "Object not initialized");
         }
-
+        /// <summary>
+        /// Check that <see cref="DNDbackground.Name"/> is working.
+        /// </summary>
         [TestMethod]
         public void DNDBackgroundTest_Name()
         {
-            //Arrange
+            ///Arrange
             DNDbackground testclass = new DNDbackground();
-            //Act
+            ///Act
             testclass.Name = "Acolyte";
-            //Assert
-            Assert.AreEqual(testclass.Name, "Acolyte", "Propety Assigning Incorrect Value");
+            ///Assert
+            Assert.AreEqual(testclass.Name, "Acolyte", "Property Assigning Incorrect Value");
         }
 
+        /// <summary>
+        /// Check that <see cref="DNDbackground.Proficency"/> is working.
+        /// </summary>
         [TestMethod]
         public void DNDBackgroundTest_Proficency()
         {
-            //Arrange
+            ///Arrange
             DNDbackground testclass = new DNDbackground();
-            //Act
+            ///Act
             testclass.Proficency = "Insight, Religion";
-            //Assert
-            Assert.AreEqual(testclass.Proficency, "Insight, Religion", "Propety Assigning Incorrect Value");
+            ///Assert
+            Assert.AreEqual(testclass.Proficency, "Insight, Religion", "Property Assigning Incorrect Value");
         }
-
+        /// <summary>
+        /// Check that <see cref="DNDbackground.Proficiencies"/> is working.
+        /// </summary>
         [TestMethod]
         public void DNDBackgroundTest_Proficiencies()
         {
-            //Arrange
+            ///Arrange
             DNDbackground testclass = new DNDbackground();
-            //Act
+            ///Act
             testclass.Proficiencies.Add("Insight, Religion");
-            //Assert
-            Assert.AreEqual(testclass.Proficiencies[0].ToString(), "Insight, Religion", "Propety Assigning Incorrect Value");
+            ///Assert
+            Assert.AreEqual(testclass.Proficiencies[0].ToString(), "Insight, Religion", "Property Assigning Incorrect Value");
         }
 
     }
