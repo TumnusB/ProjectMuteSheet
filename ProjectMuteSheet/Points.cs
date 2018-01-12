@@ -9,9 +9,26 @@ namespace ProjectMuteSheet
 {
     class Points
     {
+        /// <summary>
+        /// The points
+        /// </summary>
         public int points = 27;
+
+        /// <summary>
+        /// The maxpoints
+        /// </summary>
         Boolean maxpoints = false;
 
+        /// <summary>
+        /// Resets the specified att1.
+        /// </summary>
+        /// <param name="att1">The att1.</param>
+        /// <param name="att2">The att2.</param>
+        /// <param name="att3">The att3.</param>
+        /// <param name="att4">The att4.</param>
+        /// <param name="att5">The att5.</param>
+        /// <param name="att6">The att6.</param>
+        /// <param name="pointbox">The pointbox.</param>
         public void Reset(TextBox att1, TextBox att2, TextBox att3, TextBox att4, TextBox att5, TextBox att6, TextBox pointbox)
         {
             att1.Text = "8";
@@ -25,6 +42,12 @@ namespace ProjectMuteSheet
         }
 
 
+        /// <summary>
+        /// Pointses the decimal.
+        /// </summary>
+        /// <param name="input">The input.</param>
+        /// <param name="pointbox">The pointbox.</param>
+        /// <returns></returns>
         public string PointsDec(string input, TextBox pointbox)
         {
             int val = Convert.ToInt32(input);
@@ -73,6 +96,12 @@ namespace ProjectMuteSheet
             return newstring;
         }
 
+        /// <summary>
+        /// Pointses the inc.
+        /// </summary>
+        /// <param name="input">The input.</param>
+        /// <param name="pointbox">The pointbox.</param>
+        /// <returns></returns>
         public string PointsInc(string input, TextBox pointbox)
         {
             int val = Convert.ToInt32(input);

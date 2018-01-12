@@ -24,30 +24,56 @@ namespace ProjectMuteSheet
         /// </summary>
         private List<string> abilities = new List<string>();
 
+        /// <summary>
+        /// Gets or sets the name.
+        /// </summary>
+        /// <value>
+        /// The name.
+        /// </value>
         public string Name
         {
             get { return name; }
             set { name = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the abilities.
+        /// </summary>
+        /// <value>
+        /// The abilities.
+        /// </value>
         public List<string> Abilities
         {
             get { return abilities; }
             set { abilities = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the ability.
+        /// </summary>
+        /// <value>
+        /// The ability.
+        /// </value>
         public string Ability
         {
             get { return ability; }
             set { ability = value; }
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DNDrace"/> class.
+        /// </summary>
         public DNDrace()
         {
             name = "";
             ability = "";
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DNDrace"/> class.
+        /// </summary>
+        /// <param name="name">The name.</param>
+        /// <param name="ability">The ability.</param>
         public DNDrace(string name, string ability)
         {
             name = this.name;

@@ -20,11 +20,29 @@ namespace ProjectMuteSheet
 
         }
 
+        /// <summary>
+        /// The string
+        /// </summary>
         int str = 0;
+        /// <summary>
+        /// The dex
+        /// </summary>
         int dex = 0;
+        /// <summary>
+        /// The con
+        /// </summary>
         int con = 0;
+        /// <summary>
+        /// The inte
+        /// </summary>
         int inte = 0;
+        /// <summary>
+        /// The wis
+        /// </summary>
         int wis = 0;
+        /// <summary>
+        /// The cha
+        /// </summary>
         int cha = 0;
 
         /// <summary>
@@ -137,6 +155,9 @@ namespace ProjectMuteSheet
             AbilityScores();
         }
 
+        /// <summary>
+        /// Abilities the scores.
+        /// </summary>
         private void AbilityScores()
         {
             numStr.Value = 0;
@@ -198,9 +219,6 @@ namespace ProjectMuteSheet
 
             newstr += Convert.ToInt32(numStr.Value);
 
-            Console.WriteLine("Str Value: " + str);
-            Console.WriteLine("Working Str Value: " + newstr);
-
             string temp = newstr.ToString();
 
             lbStrB.Text = newdnds.CalcAbilityScoreModifier(temp);
@@ -217,9 +235,6 @@ namespace ProjectMuteSheet
             int newdex = dex;
 
             newdex += Convert.ToInt32(numDex.Value);
-
-            Console.WriteLine("Dex Value: " + dex);
-            Console.WriteLine("Working Dex Value: " + newdex);
 
             string temp = newdex.ToString();
 
@@ -238,9 +253,6 @@ namespace ProjectMuteSheet
 
             newcon += Convert.ToInt32(numCon.Value);
 
-            Console.WriteLine("Con Value: " + con);
-            Console.WriteLine("Working Con Value: " + newcon);
-
             string temp = newcon.ToString();
 
             lbConB.Text = newdnds.CalcAbilityScoreModifier(temp);
@@ -257,9 +269,6 @@ namespace ProjectMuteSheet
             int newint = inte;
 
             newint += Convert.ToInt32(numInt.Value);
-
-            Console.WriteLine("Int Value: " + inte);
-            Console.WriteLine("Working Int Value: " + newint);
 
             string temp = newint.ToString();
 
@@ -278,9 +287,6 @@ namespace ProjectMuteSheet
 
             newwis += Convert.ToInt32(numWis.Value);
 
-            Console.WriteLine("Wis Value: " + wis);
-            Console.WriteLine("Working Wis Value: " + newwis);
-
             string temp = newwis.ToString();
 
             lbWisB.Text = newdnds.CalcAbilityScoreModifier(temp);
@@ -297,9 +303,6 @@ namespace ProjectMuteSheet
             int newcha = cha;
 
             newcha += Convert.ToInt32(numCha.Value);
-
-            Console.WriteLine("Cha Value: " + cha);
-            Console.WriteLine("Working Cha Value: " + newcha);
 
             string temp = newcha.ToString();
 

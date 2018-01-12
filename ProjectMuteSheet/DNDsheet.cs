@@ -26,8 +26,10 @@ namespace ProjectMuteSheet
 
         public string CalcAbilityScoreModifier(string abilityscoremodifier)
         {
+            ///<summary>
             ///This checks if the value has no data if it does it
             ///passes out N/A to where the fuction is called
+            ///</summary>
             if (abilityscoremodifier == "")
             {
                 return "N/A";
@@ -37,7 +39,10 @@ namespace ProjectMuteSheet
 
             try
             {
-
+                ///<summary>
+                ///Gets a string then based on this
+                ///passes out a string based on the input
+                /// </summary>
                 switch (abilityscoremodifier)
                 {
                     case "1":

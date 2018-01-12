@@ -15,19 +15,54 @@ namespace ProjectMuteSheet
     public class DNDimport
     {
 
+        /// <summary>
+        /// The classproficiency
+        /// </summary>
         private List<XElement> classproficiency;
+
+        /// <summary>
+        /// The classname
+        /// </summary>
         private List<XElement> classname;
+
+        /// <summary>
+        /// The backgroundproficiency
+        /// </summary>
         private List<XElement> backgroundproficiency;
+
+        /// <summary>
+        /// The backgroundname
+        /// </summary>
         private List<XElement> backgroundname;
+
+        /// <summary>
+        /// The racename
+        /// </summary>
         private List<XElement> racename;
+
+        /// <summary>
+        /// The raceability
+        /// </summary>
         private List<XElement> raceability;
 
+        /// <summary>
+        /// Gets or sets the classproficiency.
+        /// </summary>
+        /// <value>
+        /// The classproficiency.
+        /// </value>
         public List<XElement> Classproficiency
         {
             get { return classproficiency; }
             set { classproficiency = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the classname.
+        /// </summary>
+        /// <value>
+        /// The classname.
+        /// </value>
         public List<XElement> Classname
         {
             get { return classname; }
@@ -35,24 +70,48 @@ namespace ProjectMuteSheet
         }
 
 
+        /// <summary>
+        /// Gets or sets the backgroundname.
+        /// </summary>
+        /// <value>
+        /// The backgroundname.
+        /// </value>
         public List<XElement> Backgroundname
         {
             get { return backgroundname; }
             set { backgroundname = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the backgroundproficiency.
+        /// </summary>
+        /// <value>
+        /// The backgroundproficiency.
+        /// </value>
         public List<XElement> Backgroundproficiency
         {
             get { return backgroundproficiency; }
             set { backgroundproficiency = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the racename.
+        /// </summary>
+        /// <value>
+        /// The racename.
+        /// </value>
         public List<XElement> Racename
         {
             get { return racename; }
             set { racename = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the raceability.
+        /// </summary>
+        /// <value>
+        /// The raceability.
+        /// </value>
         public List<XElement> Raceability
         {
             get { return raceability; }

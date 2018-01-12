@@ -16,6 +16,10 @@ namespace ProjectMuteSheet
         ///to store the XML DataSet in
         DNDdata data = new DNDdata();
 
+        /// <summary>
+        /// Datas the gen.
+        /// </summary>
+        /// <returns></returns>
         public DNDdata DataGen()
         {
             import.XMLimport();
